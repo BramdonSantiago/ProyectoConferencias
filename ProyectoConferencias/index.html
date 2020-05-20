@@ -1,0 +1,146 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  
+  <header>
+    <div class="contenedor">
+      <nav class="redes-sociales">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-pinterest"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+      </nav>
+      <div class="titulo-principal">
+        <div class="fecha-lugar row direction-column direction-row">
+          <p><i class="icono fas fa-calendar-day"></i> 24 de enero de 2020</p>
+          <p><i class="icono fas fa-map-marker-alt"></i> Michoacán, México</p>
+        </div>
+        <h1>Michwebcamp</h1>
+        <h2 class="subtitulo">La mejor conferencia de <span>diseño web</span></h2>
+      </div>  
+  </header>
+  
+  <div class="menu-principal">
+    <div class="contenedor menu row">
+      <p>Michwebcamp</p>
+      <div class="menu-movil" id="menu-movil">
+        <span class="menu-mobile"></span>
+        <span class="menu-mobile"></span>
+        <span class="menu-mobile"></span>
+      </div>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="">Conferencias</a>
+        <a href="">Calendandario</a>
+        <a href="">Invitados</a>
+        <a href="">Reservaciones</a>
+      </nav>
+    </div>
+  </div>
+  
+  <section class="descripcion contenedor seccion-margen">
+    <h2>La mejor conferencia de diseño web en español</h2>
+    <!-- <img class="separador" src="img/separador.png" alt="Este es un separador del sitio"> -->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, veniam! Officia vero obcaecati voluptatum at, eos sunt atque nesciunt quibusdam amet eius consequuntur molestias id ex harum, praesentium error! Dicta.</p>
+  </section>
+
+  <section class="programa-eventos">
+    <div class="contenedor-video">
+      <video autoplay loop>
+        <source src="video/video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="contenido-programa">
+      <div class="contenedor">
+        <div class="programa-evento">
+          <h2>Programa del evento</h2>
+          <nav class="menu-programa">
+            <a href="#talleres"><i class="icono fas fa-code"></i> Talleres</a>
+            <a href=""><i class="icono fas fa-comments"></i> Conferencias</a>
+            <a href=""><i class="icono fas fa-school"></i> Seminarios</a>
+          </nav>
+          <div id="talleres" class="info-curso ocultar">
+            
+            <div class="detalle-evento">
+              <h3>HTML5, CSS3</h3>
+              <p><i class="icono far fa-clock"></i> 16:00 hrs</p>
+              <p><i class="icono fas fa-calendar-day"></i> 1 de Dic de 2020</p>
+              <p><i class="icono fas fa-user"></i> Bramdon Isay Santiago Cardoso</p>
+            </div>
+
+            <div class="detalle-evento">
+              <h3>Responsive Desing</h3>
+              <p><i class="icono far fa-clock"></i> 20:00 hrs</p>
+              <p><i class="icono fas fa-calendar-day"></i> 10 de Dic de 2020</p>
+              <p><i class="icono fas fa-user"></i> Bramdon Isay Santiago Cardoso</p>
+            </div>
+
+            <div class="detalle-evento">
+              <h3>JavaScript</h3>
+              <p><i class="icono far fa-clock"></i> 16:00 hrs</p>
+              <p><i class="icono fas fa-calendar-day"></i> 20 de Dic de 2020</p>
+              <p><i class="icono fas fa-user"></i> Bramdon Isay Santiago Cardoso</p>
+            </div>
+            <div class="contenido-boton row">
+               <a href="" class="boton">VER TODOS</a>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+  <script>
+    $( "#menu-movil" ).click(function() {
+      $( "#nav-menu" ).toggle("slow")
+    });
+    </script>
+    
+</body>
+
+</html>
